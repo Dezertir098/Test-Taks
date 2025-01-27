@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "Haval";
+    src: url("public/font/Haval-Light.otf") format("truetype");
+}
+
+body {
+    font-family: "Haval";
+    margin: 0 auto;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    font-size: 10.66px;
+    padding-left: 13px;
+}
+
+ul {
+    display: flex;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header,
+.header_cars_and_services {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 40px;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 span {
+    color: #00CABF;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    padding: 20px;
+    font-family: "Haval";
+}
+
+.header_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.phone img {
+    margin-right: 10px;
+}
+
+.header_logos {
+    display: flex;
+    align-items: center;
+}
+
+.header_logos img {
+    padding: 20px 10px 14px 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.location img {
+    margin-right: 5px;
+}
+
+.separator {
+    margin-top: 20px;
+}
+
+.header_cars_and_services {
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.line {
+    border-bottom: 1px solid #333333;
+    /* Параметры линии */
+}
+
+.cover {
+    background-image: url(public/img/div.content.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 756px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.headline {
+    height: 148px;
+    background-image: linear-gradient(to right, #ffffff00 0%, #00000090 39%, #00000090 62%, #ffffff00 100%);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cover button {
+    height: 60px;
+    width: 374px;
+    background: #00CABF;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support_button {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.leave_req {
+    background-color: #F3F3F3;
+}
+
+.leave_req p {
+    padding-top: 30px;
+    margin-top: 0px;
+}
+
+.leave_req button {
+    background: #00CABF;
+    color: #ffffff;
+    font-size: 16px;
+    height: 70px;
+    width: 467px;
+}
+
+.timer_and_request {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car_list {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.haval_m6 {
+    height: 863px;
+    width: 560px;
+    background-color: #00000010;
+}
+
+.availability {
+    background: #00CABF;
+    height: 42px;
+    width: 187px;
+    position: absolute;
+    margin: -20px 0px 0px 330px;
+}
+
+.availability p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.availability span {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.car_info {
+    border: 1px #CCCCCC solid;
+    background: url(public/img/Mask\ group.png);
+    background-color: #FFFFFF;
+    height: 356px;
+    width: 480px;
+
+}
+
+.car_info h2 {
+    font-size: 22px;
+    margin: 20px 20px 20px 20px;
+}
+
+.car_info p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.car_info span {
+    color: #00CABF;
+}
+
+.test_drive {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+
+.test_drive p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.test_drive img {
+    margin-right: 8px;
+}
+
+.car_model_and_test_drive {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.selector {
+    margin: 20px 0px 20px 0px;
+}
+
+.benefits {
+    column-count: 2;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.benefits p {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+
+.benefit {
+    display: flex;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 240px;
+    align-items: center;
+}
+.car_buttons_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_buttons {
+    height:60px;
+    width: 480px;
+    font-size: 13.56px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.what_cost {
+    background-color: #00CABF;
+    color: #ffffff;
+}
+.credit {
+    background-color: #000000;
+    color: #ffffff;
+}
+.equipment {
+    background-color: #FFFFFF;
+    border: 1px #000000 solid;
+}
+
+.benefit a {
+    background-color: #000000;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.benefit a:hover {
+    background-color: #00CABF;
+}
+.cars {
+    display: flex;
+    justify-content: space-evenly;
+}
+.cars_not_count span{
+    margin-top: 7px;
+}

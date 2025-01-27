@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="public/img/havalicon.png">
     <link rel="stylesheet" href="style.css">
     <title>Haval</title>
 </head>
@@ -60,7 +61,7 @@
             <div class="headline">
                 <h1>Увеличиваем выгоды на HAVAL<span> в Химках к Чёрной пятнице!</span></h1>
             </div>
-            <button class="cover">ЗАФИКСИРОВАТЬ УСЛОВИЯ</button>
+            <button class="cover openModalBtn">ЗАФИКСИРОВАТЬ УСЛОВИЯ</button>
         </div>
     </div>
     <div class="leave_req">
@@ -70,7 +71,7 @@
                 <p>ОСТАВЬТЕ ЗАЯВКУ И ЗАФИКСИРУЙТЕ УСЛОВИЯ</p>
                 <script src="//megatimer.ru/get/4465e44efdf46c60744907e4b72981f0.js"></script>
             </div>
-            <button>ЗАФИКСИРОВАТЬ УСЛОВИЯ</button>
+            <button class="openModalBtn">ЗАФИКСИРОВАТЬ УСЛОВИЯ</button>
         </div>
         <img class="support_button" src="public/img/Group 102.svg" alt="Техподдержка">
     </div>
@@ -193,6 +194,44 @@
             </div>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="d-flex">
+                <img src="public/img/havalogo.png" alt="">
+                <p>Оставайтесь в курсе выгодных предложнией</p>
+                <form id="phoneForm">
+                    <input type="tel" id="phone" name="phone" placeholder="+7 915 348 22 04" required>
+                    <button type="submit" class="submit">Отправить</button>
+                </form>
+                
+                
+            </div>
+            <img class="auto" src="public/img/red_short.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(".openModalBtn").click(function () {
+            $("#modal").fadeIn();
+        });
+
+
+        $(".close").click(function () {
+            $("#modal").fadeOut();
+        });
+
+
+        $(window).click(function (event) {
+            if ($(event.target).is("#modal")) {
+                $("#modal").fadeOut();
+            }
+        });
+    </script>
+
 </body>
 
 </html>

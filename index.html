@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="public/img/havalicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Haval</title>
 </head>
 
@@ -25,14 +26,16 @@
             <div class="location">
                 <img src="public/img/gap.svg" alt="">
                 <div class="address">
-                    <p>МО, г. Химки, Ленинградское ш., вл.14 стр.1</p>
+                    <span>
+                        <p>МО, г. Химки, Ленинградское ш., вл.14 стр.1</p>
+                    </span>
                     <p>Часы работы с 09:00 до 21:00</p>
                 </div>
             </div>
         </div>
         <div class="line"></div>
-        <div class="header_cars_and_services conteiner">
-            <div class="cars">
+        <div class="header_models_and_services conteiner">
+            <div class="models">
                 <ul>
                     <li><a href="">M6</a></li>
                     <li><a href="">DARGO X</a></li>
@@ -75,7 +78,7 @@
         </div>
         <img class="support_button" src="public/img/Group 102.svg" alt="Техподдержка">
     </div>
-    <div class="car_list">
+    <div class="card_list">
         <div class="conteiner cars">
 
 
@@ -85,7 +88,7 @@
                 </div>
                 <div class="card">
                     <div class="car_info">
-                        <div class="car_model_and_test_drive">
+                        <div class="car_name_and_test_drive">
                             <div class="car_name_and_profit">
                                 <h2>HAVAL M6</h2>
                                 <p>Выгода до <span>410 000 ₽</span></p>
@@ -96,16 +99,22 @@
                             </div>
                         </div>
                         <div class="car_photo">
-                            <img src="public/img/silver_M6.png" alt="M6">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" data-color="black">
+                                        <img src="public/img/blackm6.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide" data-color="white">
+                                        <img src="public/img/whitem6.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide" data-color="silver">
+                                        <img src="public/img/silver_m6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="selector">
-                        <img src="public/img/black.svg" alt="">
-                        <img src="public/img/white.svg" alt="">
-                        <img src="public/img/silver.svg" alt="">
-                    </div>
-
-
                 </div>
                 <div class="benefits">
                     <div class="benefit">
@@ -129,19 +138,19 @@
                         <p>Зимние шины в подарок</p>
                     </div>
                 </div>
-                <div class="car_buttons_list">
+                <div class="card_buttons_list">
                     <button class="card_buttons what_cost">УЗНАТЬ СТОИМОСТЬ</button>
                     <button class="card_buttons credit">РАСЧИТАТЬ КРЕДИТ</button>
                     <button class="card_buttons equipment">ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</button>
                 </div>
             </div>
-            <div class="haval_m6">
+            <div class="dargo_x">
                 <div class="availability cars_not_count">
                     <p><span>В НАЛИЧИИ</span></p>
                 </div>
                 <div class="card">
                     <div class="car_info">
-                        <div class="car_model_and_test_drive">
+                        <div class="car_name_and_test_drive">
                             <div class="car_name_and_profit">
                                 <h2>HAVAL DARGO X</h2>
                                 <p>Выгода до <span>320 000 ₽</span></p>
@@ -152,85 +161,116 @@
                             </div>
                         </div>
                         <div class="car_photo">
-                            <img src="public/img/red_X.jpg.png" alt="M6">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" data-color="black"><img src="public/img/silver_dargo.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide" data-color="white"><img src="public/img/black_dargo.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide" data-color="silver"><img src="public/img/white_dargo.png"
+                                            alt=""></div>
+                                    <div class="swiper-slide" data-color="red"><img src="public/img/red_dargo.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="swiper-pagination dargo"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="benefits">
+                        <div class="benefit">
+                            <a href=""><img class="benefit_icon" src="public/img/goverment_sale.svg" alt=""></a>
+                            <p>Выгода по госпрограмме</p>
+                        </div>
+                        <div class="benefit">
+                            <a href=""><img class="benefit_icon" src="public/img/kasko.svg" alt=""></a>
+                            <p>КАСКО в подарок</p>
+                        </div>
+                        <div class="benefit">
+                            <a href=""><img class="benefit_icon" src="public/img/gift.svg" alt=""></a>
+                            <p>Доп.оборудование на 100 000р в подарок</p>
+                        </div>
+                        <div class="benefit">
+                            <a href=""><img class="benefit_icon" src="public/img/cheep_tarde.svg" alt=""></a>
+                            <p>Максимальные выгоды по трейд-ин</p>
+                        </div>
+                        <div class="benefit">
+                            <a href=""><img class="benefit_icon" src="public/img/winter_tires.svg" alt=""></a>
+                            <p>Зимние шины в подарок</p>
                         </div>
                     </div>
-                    <div class="selector">
-                        <img src="public/img/black.svg" alt="">
-                        <img src="public/img/white.svg" alt="">
-                        <img src="public/img/silver.svg" alt="">
-                        <img src="public/img/red.png" alt="">
+                    <div class="card_buttons_list">
+                        <button class="card_buttons what_cost">УЗНАТЬ СТОИМОСТЬ</button>
+                        <button class="card_buttons credit">РАСЧИТАТЬ КРЕДИТ</button>
+                        <button class="card_buttons equipment">ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</button>
                     </div>
-
-
-                </div>
-                <div class="benefits">
-                    <div class="benefit">
-                        <a href=""><img class="benefit_icon" src="public/img/goverment_sale.svg" alt=""></a>
-                        <p>Выгода по госпрограмме</p>
-                    </div>
-                    <div class="benefit">
-                        <a href=""><img class="benefit_icon" src="public/img/kasko.svg" alt=""></a>
-                        <p>КАСКО в подарок</p>
-                    </div>
-                    <div class="benefit">
-                        <a href=""><img class="benefit_icon" src="public/img/gift.svg" alt=""></a>
-                        <p>Доп.оборудование на 100 000р в подарок</p>
-                    </div>
-                    <div class="benefit">
-                        <a href=""><img class="benefit_icon" src="public/img/cheep_tarde.svg" alt=""></a>
-                        <p>Максимальные выгоды по трейд-ин</p>
-                    </div>
-                    <div class="benefit">
-                        <a href=""><img class="benefit_icon" src="public/img/winter_tires.svg" alt=""></a>
-                        <p>Зимние шины в подарок</p>
-                    </div>
-                </div>
-                <div class="car_buttons_list">
-                    <button class="card_buttons what_cost">УЗНАТЬ СТОИМОСТЬ</button>
-                    <button class="card_buttons credit">РАСЧИТАТЬ КРЕДИТ</button>
-                    <button class="card_buttons equipment">ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="d-flex">
-                <img src="public/img/havalogo.png" alt="">
-                <p>Оставайтесь в курсе выгодных предложнией</p>
-                <form id="phoneForm">
-                    <input type="tel" id="phone" name="phone" placeholder="+7 915 348 22 04" required>
-                    <button type="submit" class="submit">Отправить</button>
-                </form>
-                
-                
+
+
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_text">
+                    <img src="public/img/havalogo.png" alt="">
+                    <p>Оставайтесь в курсе выгодных предложнией</p>
+                    <form id="phoneForm">
+                        <input type="tel" id="phone" name="phone" placeholder="+7 915 348 22 04" required>
+                        <button type="submit" class="submit">Отправить</button>
+                    </form>
+
+
+                </div>
+                <img class="dargo_short " src="public/img/dargo_short.png" alt="">
             </div>
-            <img class="auto" src="public/img/red_short.png" alt="">
         </div>
-    </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+            const swiper = new Swiper('.swiper', {
+
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'bullets'
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                }
+            });
+            let colorSelectors = document.querySelectorAll('.color-selector');
+            colorSelectors.forEach(function (selector) {
+                selector.addEventListener('click', function () {
+                    let slideIndex = this.getAttribute('data-slide');
+                    swiper.slideTo(slideIndex);
+                });
+            });
+
+            // Модальное окно код
+            $(".openModalBtn").click(function () {
+                $("#modal").fadeIn();
+            });
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-
-        $(".openModalBtn").click(function () {
-            $("#modal").fadeIn();
-        });
-
-
-        $(".close").click(function () {
-            $("#modal").fadeOut();
-        });
-
-
-        $(window).click(function (event) {
-            if ($(event.target).is("#modal")) {
+            $(".close").click(function () {
                 $("#modal").fadeOut();
-            }
-        });
-    </script>
+            });
+
+
+            $(window).click(function (event) {
+                if ($(event.target).is("#modal")) {
+                    $("#modal").fadeOut();
+                }
+            });
+        </script>
+
 
 </body>
 

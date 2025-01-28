@@ -29,14 +29,12 @@ a {
     color: #FFFFFF;
 }
 
-header,
-.header_cars_and_services {
+header {
     color: #FFFFFF;
     background-color: #000000;
 }
 
 h1 {
-    margin: 0px;
     font-size: 40px;
     text-align: center;
     height: 90px;
@@ -57,6 +55,15 @@ button {
     font-family: "Haval";
 }
 
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(1);
+}
+
 .header_info {
     display: flex;
     align-items: center;
@@ -73,18 +80,12 @@ button {
     margin-right: 10px;
 }
 
-.header_logos {
-    display: flex;
-    align-items: center;
-}
-
 .header_logos img {
     padding: 20px 10px 14px 10px;
 }
 
 .location {
     display: flex;
-    align-items: center;
 }
 
 .location p {
@@ -96,34 +97,44 @@ button {
     margin-right: 5px;
 }
 
-.separator {
-    margin-top: 20px;
+.location span p {
+    font-size: 13px;
 }
 
-.header_cars_and_services {
-    margin-top: 1px;
+.header_models_and_services {
     display: flex;
     justify-content: space-between;
+    height: 42px;
+}
+
+.models {
     font-weight: 600;
+}
+
+.services a {
+    font-size: 11px;
+}
+
+.header_models_and_services a:hover {
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .line {
     border-bottom: 1px solid #333333;
-    /* Параметры линии */
 }
 
 .cover {
     background-image: url(public/img/div.content.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 756px;
     color: #FFFFFF;
+    height: 756px;
     display: flex;
 }
 
 .headline {
-    height: 148px;
-    background-image: linear-gradient(to right, #ffffff00 0%, #00000090 39%, #00000090 62%, #ffffff00 100%);
+    background-image: linear-gradient(to right, #ffffff00 0%, #00000090 38%, #00000090 62%, #ffffff00 100%);
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -141,7 +152,6 @@ button {
     align-items: center;
     font-size: 16px;
     font-weight: 600;
-    padding: 0;
 }
 
 .content {
@@ -161,8 +171,7 @@ button {
 }
 
 .leave_req p {
-    padding-top: 30px;
-    margin-top: 0px;
+    padding-top: 40px;
 }
 
 .leave_req button {
@@ -171,6 +180,7 @@ button {
     font-size: 16px;
     height: 70px;
     width: 467px;
+    font-weight: 600;
 }
 
 .timer_and_request {
@@ -179,12 +189,13 @@ button {
     justify-content: space-between;
 }
 
-.car_list {
+.card_list {
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.haval_m6 {
+.haval_m6,
+.dargo_x {
     height: 863px;
     width: 560px;
     background-color: #00000010;
@@ -205,7 +216,6 @@ button {
     display: flex;
     flex-direction: column;
     font-weight: 600;
-
 }
 
 .card {
@@ -224,9 +234,8 @@ button {
     border: 1px #CCCCCC solid;
     background: url(public/img/Mask\ group.png);
     background-color: #FFFFFF;
-    height: 356px;
+    height: 336px;
     width: 480px;
-
 }
 
 .car_info h2 {
@@ -259,21 +268,23 @@ button {
 .test_drive img {
     margin-right: 8px;
 }
-
-.car_model_and_test_drive {
-    display: flex;
-    flex-direction: row;
-
+.test_drive img:hover{
+    margin-right: 8px;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.selector {
-    margin: 20px 0px 20px 0px;
+.car_name_and_test_drive {
+    display: flex;
+    flex-direction: row;
 }
 
 .benefits {
     column-count: 2;
     margin-left: 30px;
     margin-right: 10px;
+    margin-top: 70px;
 }
 
 .benefits p {
@@ -290,36 +301,12 @@ button {
     width: 240px;
     align-items: center;
 }
-.car_buttons_list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card_buttons {
-    height:60px;
-    width: 480px;
-    font-size: 13.56px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-.what_cost {
-    background-color: #00CABF;
-    color: #ffffff;
-}
-.credit {
-    background-color: #000000;
-    color: #ffffff;
-}
-.equipment {
-    background-color: #FFFFFF;
-    border: 1px #000000 solid;
-}
 
 .benefit a {
     background-color: #000000;
     border-radius: 100%;
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,27 +315,79 @@ button {
 
 .benefit a:hover {
     background-color: #00CABF;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.389);
+    transform: scale(1.1);
 }
+
+.card_buttons_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.card_buttons {
+    height: 60px;
+    width: 480px;
+    font-size: 13.56px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.what_cost {
+    background-color: #00CABF;
+    color: #ffffff;
+}
+
+.openModalBtn:hover,
+.what_cost:hover,
+.submit:hover {
+    background-color: #000000;
+}
+
+.credit {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.credit:hover {
+    background-color: #FFFFFF;
+    border: 1px #000000 solid;
+    color: #000000;
+}
+
+.equipment {
+    background-color: #FFFFFF;
+    border: 1px #000000 solid;
+}
+
+.equipment:hover {
+    background-color: #00CABF;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+
 .cars {
     display: flex;
     justify-content: space-evenly;
 }
-.cars_not_count span{
+
+.cars_not_count span {
     margin-top: 7px;
 }
 
+/* Стили для модального окна */
 
-
-
-/* Стиль для модального окна */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -368,32 +407,37 @@ button {
     font-weight: bold;
 }
 
-.close:hover,.close:focus {
+.close:hover,
+.close:focus {
     color: black;
-    text-decoration: none;
     cursor: pointer;
 }
-.d-flex {
+
+.modal_text {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
 }
-.d-flex p {
+
+.modal_text p {
     color: #FFFFFF;
 }
+
 form {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
 }
+
 input {
     width: 324px;
     height: 40px;
     font-size: 16px;
 }
+
 .submit {
     width: 180px;
     height: 40px;
@@ -402,7 +446,67 @@ input {
     justify-content: center;
     margin-top: 30px;
     background-color: #00CABF;
+    color: #FFFFFF;
 }
-.auto {
+
+.dargo_short {
     margin-left: 216px;
+}
+
+/* Стили для селектора */
+
+.swiper {
+    height: 300px;
+}
+
+.swiper-pagination-bullet-active {
+    border: 5px #ffffff solid;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.044);
+}
+
+span.swiper-pagination-bullet {
+    height: 28px;
+    width: 28px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* M6 selector colors */
+
+.swiper-pagination-bullet:nth-child(1) {
+    background-color: #000000;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+    background-color: #E7E7E7;
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+    background-color: #A1A1A1;
+}
+
+/* Dargo selector colors */
+
+.dargo .swiper-pagination-bullet:nth-child(1) {
+    background-color: #A1A1A1;
+}
+
+.dargo .swiper-pagination-bullet:nth-child(2) {
+    background-color: #000000;
+}
+
+.dargo .swiper-pagination-bullet:nth-child(3) {
+    background-color: #E7E7E7;
+}
+
+.dargo .swiper-pagination-bullet:nth-child(4) {
+    background-color: #A13A21;
 }

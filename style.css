@@ -2,7 +2,9 @@
     font-family: "Haval";
     src: url("public/font/Haval-Light.otf") format("truetype");
 }
-
+body, html {
+    overflow-x: hidden;
+}
 body {
     font-family: "Haval";
     margin: 0 auto;
@@ -563,7 +565,7 @@ span.swiper-pagination-bullet {
         margin-top: 120px;
     }
     .haval_m6, .dargo_x {
-        width: 400px;
+        width: 350px;
     }
     .container {
         max-width: 400px;
@@ -572,13 +574,13 @@ span.swiper-pagination-bullet {
         column-count: 1;
     }
     .car_photo img{
-        width: 400px;
+        width: 350px;
     }
     .car_info {
-        width: 396px;
+        width: 348px;
     }
     .availability {
-        margin: -20px 0px 0px 190px;
+        margin: -20px 0px 0px 120px;
     }
     .benefit p {
         font-size: 12px;

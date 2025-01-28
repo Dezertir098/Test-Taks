@@ -22,6 +22,7 @@ li {
 ul {
     display: flex;
     padding: 0px;
+    align-items: center;
 }
 
 a {
@@ -176,7 +177,6 @@ button:active {
 
 .leave_req button {
     background: #00CABF;
-    color: #ffffff;
     font-size: 16px;
     height: 70px;
     width: 467px;
@@ -337,6 +337,9 @@ button:active {
 .what_cost {
     background-color: #00CABF;
     color: #ffffff;
+}
+.openModalBtn {
+    color: #FFFFFF;
 }
 
 .openModalBtn:hover,
@@ -509,4 +512,135 @@ span.swiper-pagination-bullet {
 
 .dargo .swiper-pagination-bullet:nth-child(4) {
     background-color: #A13A21;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 767px) {
+    .cars {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        max-width: 600px;
+    }
+    .timer-separator, #timer-element-4465e44efdf46c60744907e4b72981f0-minutes, #timer-element-4465e44efdf46c60744907e4b72981f0-secundes{
+        visibility: hidden;
+    }
+    .timer_and_request {
+        display: flex;
+        flex-direction: column;
+    }
+    .timer {
+        margin-left:  270px
+    }
+    .leave_req button{
+        width: 250px;
+        margin-top: 40px;
+    }
+    .leave_req p {
+        text-align: center;
+        margin-right: 300px;
+    }
+    .support_button {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .openModalBtn {
+        font-size: 14px;
+        text-align: center;
+    }
+    .cover button {
+        width: 250px;
+        margin-top: 60px;
+    }
+    h1 {
+        font-size: 28px;
+        width: 350px;
+    }
+    .headline {
+        width: 400px;
+        margin-top: 120px;
+    }
+    .haval_m6, .dargo_x {
+        width: 400px;
+    }
+    .container {
+        max-width: 400px;
+    }
+    .benefits {
+        column-count: 1;
+    }
+    .car_photo img{
+        width: 400px;
+    }
+    .car_info {
+        width: 396px;
+    }
+    .availability {
+        margin: -20px 0px 0px 190px;
+    }
+    .benefit p {
+        font-size: 12px;
+    }
+    .card_buttons {
+        width: 250px;
+    }
+    .haval_m6, .dargo_x {
+        height: 1000px;
+    }
+    .dargo_x {
+        margin-top: 100px;
+    }
+    span.swiper-pagination-bullet {
+        height: 32px;
+        width: 32px;
+    }
+    .card_list {
+        display: flex;
+    }
+    .benefits {
+        padding-top: 40px;
+    }
+    .header_models_and_services {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    .models ul {
+        display: block;
+        text-align: center;
+    }
+    .models li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .services {
+        margin-right: 50px;
+        text-align: center;
+    }
+    .header_logos {
+        display: flex;
+        align-items: center; 
+    }
+    .header_info {
+        display: flex;
+        justify-content: center;
+    }
+    .phone, .location {
+        display: none;
+    }
+    .modal-content {
+        max-width: 350px;
+        margin-right: 210px;
+    }
+    .dargo_short {
+        margin-left: 67px;
+    }
+    .submit {
+        margin-top: 40px;
+    }
+    .car_name_and_profit p {
+        max-width: 150px;
+    }
 }

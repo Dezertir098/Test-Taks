@@ -618,7 +618,7 @@ span.swiper-pagination-bullet {
         font-size: 16px;
     }
     .services {
-        margin-right: 50px;
+        margin-right: 30px;
         text-align: center;
     }
     .header_logos {
@@ -634,7 +634,6 @@ span.swiper-pagination-bullet {
     }
     .modal-content {
         max-width: 350px;
-        margin-right: 210px;
     }
     .dargo_short {
         margin-left: 67px;
@@ -644,5 +643,8 @@ span.swiper-pagination-bullet {
     }
     .car_name_and_profit p {
         max-width: 150px;
+    }
+    .content {
+        margin-right: 15px;
     }
 }
